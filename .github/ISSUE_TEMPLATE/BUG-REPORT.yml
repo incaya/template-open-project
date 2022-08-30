@@ -1,0 +1,80 @@
+name: "🐛 Rapport de bug"
+description: Créer un rapport de bug pour nous aider régler un problème.
+title: "<title>"
+labels: [
+  "bug"
+]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Une description claire et concise de ce qu'est le problème.
+      placeholder: Short and explicit description of your incident...
+    validations:
+      required: true
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Comment reproduire"
+      description: Étapes pour reproduire le comportement
+      value: |
+        1. Aller à '...'
+        2. Cliquez sur '....'
+        3. Faites défiler l'écran jusqu'à '....'
+        4. Voir erreur
+      render: bash
+    validations:
+      required: true
+  - type: input
+    id: reprod-url
+    attributes:
+      label: "URL du probleme"
+      description: Si cela est possible, renseignez une url permettant de reproduire le problème.
+      placeholder: ex. https://facebook.com
+    validations:
+      required: false
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Captures d'écran"
+      description: Le cas échéant, ajoutez des captures d'écran pour vous aider à expliquer votre problème.
+      value: |
+        ![DESCRIPTION](LINK.png)
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: Veuillez copier et coller toute sortie de log pertinente. Il sera automatiquement formaté en code, donc pas besoin de formatage.
+      render: bash
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: "Navigateur"
+      description: Sur quels navigateurs rencontrez-vous le problème ?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Opera
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: "OS"
+      description: Sur quel OS rencontrez-vous le problème ?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - Mac
+    validations:
+      required: false

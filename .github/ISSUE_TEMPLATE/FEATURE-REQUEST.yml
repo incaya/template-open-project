@@ -1,0 +1,39 @@
+name: "💡 Demande d'amélioration"
+description: Créer un ticket pour suggérer une idée d'amélioration du projet
+title: "💡 <title>"
+labels: [
+  "question"
+]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "En Bref"
+      description: Votre demande d'amélioration est-elle liée à un problème ? À un manque ? Veuillez le décrire.
+      placeholder: Décrivez en quelques lignes votre demande de fonctionnalité
+    validations:
+      required: true
+  - type: textarea
+    id: basic_example
+    attributes:
+      label: "Donnez un exemple"
+      description: Décrivez par l'exemple la solution que vous aimeriez.
+      placeholder: quelques mots pour décrire un exemple.
+    validations:
+      required: true
+  - type: textarea
+    id: reference_issues
+    attributes:
+      label: "Issue.s liée.s"
+      description: Votre suggestion est-elle liée à des issues existantes ?
+      placeholder: "#Issues IDs"
+    validations:
+      required: false
+  - type: textarea
+    id: unresolved_question
+    attributes:
+      label: "Contexte supplémentaire"
+      description: Ajoutez ici tout autre contexte ou captures d'écran concernant la demande de fonctionnalité.
+      placeholder: libre...
+    validations:
+      required: false

@@ -1,0 +1,15 @@
+name: "Demande de documentation"
+description: "Signaler un manque dans la documentation"
+title: "<title>"
+labels: [
+  "documentation"
+]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Explication"
+      description: Vous avez tenter de faire quelque chose, sans trouver le moyen de la faire dans la documentation ? De quoi s'agissait-il ?
+      placeholder: Une description claire et concise de ce que vous ne pouvez pas faire et que la documentation devrait renseigner.
+    validations:
+      required: true

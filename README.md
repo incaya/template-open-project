@@ -62,7 +62,7 @@ Vous souhaitez participer ? Merci à vous :+1:
 Et c’est très simple :
 
 - Si vous ne savez pas par où commencer, vous pouvez jeter un coup d’œil aux [**issues**](https://github.com/incaya/template-open-project/issues).
-- Une fois que vous savez quoi faire, vous pouvez consulter le [**guide du contributeur**](CONTRIBUTING.md) pour vous lancer.
+- Une fois que vous savez quoi faire, vous pouvez consulter le [**guide du contributeur**](.docs/CONTRIBUTING.md) pour vous lancer.
 
 Et si vous ne trouvez toujours pas quoi faire dans les issues existantes et/ou que vous avez d’autres idées, n’hésitez pas à créer une nouvelle issue.
 
@@ -70,10 +70,7 @@ Et si vous ne trouvez toujours pas quoi faire dans les issues existantes et/ou q
 
 Certes, le [code et ses tests pose une bonne pierre dans la documentation](https://martinfowler.com/bliki/CodeAsDocumentation.html).
 
-Pour autant, le code ne fait pas tous le projet. Vous trouverez donc, en plus de code, des informations sur le projet dans :
-
-- [le guide du contributeur](CONTRIBUTING.md)
-- [le site de documentation du projet](https://www.estcequonmetenprodaujourdhui.info/)
+Mais si vous avez besoin d'aide, n'hésitez pas à consulter notre [guide de support](./docs/SUPPORT.md) ou encore notre page ["Architecture"](./docs/ARCHITECTURE.md)
 
 ## License
 

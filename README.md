@@ -68,7 +68,7 @@ Et si vous ne trouvez toujours pas quoi faire dans les issues existantes et/ou q
 
 ## Trouver de la documentation
 
-Certes, le [code et ses tests sont la meilleur documentation](https://martinfowler.com/bliki/CodeAsDocumentation.html).
+Certes, le [code et ses tests pose une bonne pierre dans la documentation](https://martinfowler.com/bliki/CodeAsDocumentation.html).
 
 Pour autant, le code ne fait pas tous le projet. Vous trouverez donc, en plus de code, des informations sur le projet dans :
 

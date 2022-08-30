@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Si vous utilisez ce dépôt, veuillez le citer comme ci-dessous."
+authors:
+- family-names: "Incaya"
+  given-names: "Incaya "
+type: software
+title: "Template pour les projets publiques d'Incaya"
+version: 1.0.0
+date-released: 2022-08-30
+url: "https://github.com/incaya/template-open-project"

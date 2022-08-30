@@ -1,3 +1,12 @@
+---
+title: Architecture
+slug: architecture
+date: 2022-03-15T10:43:23Z
+draft: false
+weight: 5
+summary: 'Architecture globale du projet'
+---
+
 # Pourquoi ?
 
 > Si vous maintenez un projet open-source de l'ordre de 10k-200k lignes de code, je vous encourage fortement à ajouter un document ARCHITECTURE à côté de README et CONTRIBUTING. Avant d'entrer dans les détails du pourquoi et du comment, je tiens à souligner qu'il ne s'agit pas d'un autre conseil du type "les documents sont bons, écrivez plus de documents". Je suis assez négligent en matière de documentation, et, par exemple, j'utilise souvent simplement "simplifier" comme message de validation. Néanmoins, je suis très attaché à cette question, au point de vous harceler :-)

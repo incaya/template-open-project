@@ -1,3 +1,12 @@
+---
+title: Trouver de l'aide
+slug: trouver-de-l-aide
+date: 2022-03-15T10:43:23Z
+draft: false
+weight: 3
+summary: "Comment et ou trouver de l'aide pour le projet"
+---
+
 # Trouver de l’aide
 
 ## Dans une issue

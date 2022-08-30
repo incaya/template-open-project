@@ -1,3 +1,12 @@
+---
+title: Politique de sécurité
+slug: politique de securité
+date: 2022-03-15T10:43:23Z
+draft: false
+weight: 4
+summary: 'La politiques et les procédures de sécurité'
+---
+
 # Politiques et procédures de sécurité
 
 Ce document décrit les procédures de sécurité et les politiques générales pour les projets Open Source d'Incaya sur le site https://github.com/incaya.

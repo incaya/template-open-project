@@ -1,3 +1,12 @@
+---
+title: Contribuer
+slug: contribuer
+date: 2022-03-15T10:43:23Z
+draft: false
+weight: 1
+summary: 'Comment contribuer au projet'
+---
+
 # Contribuer au projet
 
 ## Code de conduite

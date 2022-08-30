@@ -1,3 +1,12 @@
+---
+title: Code de conduite
+slug: code-de-conduite
+date: 2022-03-15T10:43:23Z
+draft: false
+weight: 2
+summary: 'Les régles de conduite pour participer au projet'
+---
+
 # Code de conduite
 
 ## 1. Objectif

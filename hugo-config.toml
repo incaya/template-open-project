@@ -1,0 +1,61 @@
+baseURL = "http://localhost:1313"
+languageCode = 'fr'
+defaultContentLanguage = 'fr'
+title = "Projet X - Documentation"
+theme = "hugo-whisper-theme"
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[outputFormats.SearchIndex]
+baseName = "search"
+mediaType = "application/json"
+
+[outputs]
+home = [ "HTML", "SearchIndex" ]
+
+# Controls how many words are printed in the content summary on the docs homepage.
+# See https://gohugo.io/content-management/summaries/
+summaryLength = 50
+
+[[menu.main]]
+    name = "Accueil"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Contribuer"
+    url = "/contribuer/"
+    weight = 2
+
+[[menu.main]]
+    name = "Documentation"
+    url = "/documentation/"
+    weight = 3
+
+[[menu.main]]
+    name = "Journal des décisions"
+    url = "/adrs/"
+    weight = 4
+
+[[menu.main]]
+    name = "Changelog"
+    url = "/changelog/current"
+    weight = 5
+
+[[menu.main]]
+    name = "Recherche"
+    url = "/recherche/"
+    weight = 6
+
+[params]
+  homepage_button_link = '/documentation'
+  homepage_button_text = 'Lire la documentation'
+  homepage_intro = 'Une introduction à mettre dans le contenu du fichier _index.md à la racine du répertoire de la documentation.'
+  enable_anchor_link = true
+  mainSections = ['contribuer', 'documentation', 'adrs', 'changelog', 'recherche']
+
+  [params.logo]
+      mobile = "/images/logo.png"
+      standard  = "/images/logo.png"

@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  documentation:
+    image: ghcr.io/incaya/incaya-documentation:latest
+    volumes:
+      - ./project-documentation/adrs:/documentation/content/adrs
+      - ./project-documentation/recherche:/documentation/content/recherche
+      - ./project-documentation/documentation:/documentation/content/documentation
+      - ./project-documentation/_index.md:/documentation/content/_index.md
+      - ./docs:/documentation/content/contribuer
+      - ./logo.png:/documentation/static/images/logo.png
+      - ./hugo-config.toml:/documentation/config.toml
+    ports:
+      - 3001:3000
+      - 1313:1313

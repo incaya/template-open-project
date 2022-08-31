@@ -2,24 +2,24 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
-## [0.1.0](https://github.com/incaya/projet-inkaya/compare/e45a0cb285d1ec3004e7bd3b4c682ad40282250a..0.1.0) - 2022-08-31
+## [0.1.0](https://github.com/incaya/projet-incaya/compare/e45a0cb285d1ec3004e7bd3b4c682ad40282250a..0.1.0) - 2022-08-31
 #### Features
-- gestion des releases - ([408476c](https://github.com/incaya/projet-inkaya/commit/408476cb3f097f1e06cca0ca081b2d8239c4851d)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- mise en place du conventional commit - ([7c4065b](https://github.com/incaya/projet-inkaya/commit/7c4065b5ac71d5681618eff60c1d4f8e44db93d9)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- gestion des releases - ([408476c](https://github.com/incaya/projet-incaya/commit/408476cb3f097f1e06cca0ca081b2d8239c4851d)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- mise en place du conventional commit - ([7c4065b](https://github.com/incaya/projet-incaya/commit/7c4065b5ac71d5681618eff60c1d4f8e44db93d9)) - [@alexisjanvier](https://github.com/alexisjanvier)
 #### Miscellaneous Chores
-- publication de la documentation sur Gh pages - ([482c5d8](https://github.com/incaya/projet-inkaya/commit/482c5d821bac278ef0f38bddf7df749062f4f7de)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- mise en place du site de documentation WIP - ([c3c1e65](https://github.com/incaya/projet-inkaya/commit/c3c1e65e7258a4db26b66a9cce0cbd40f8d8bb8d)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- refacto mineur - ([1175395](https://github.com/incaya/projet-inkaya/commit/11753954683b72ee8cc97b4f942ce83c9c0327d9)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- ajout du makefile - ([641120b](https://github.com/incaya/projet-inkaya/commit/641120b535554d0dba2c3f8b20356c158f8fd37c)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- PR template - ([c2cc309](https://github.com/incaya/projet-inkaya/commit/c2cc3097d22ffdd8f1e4735eb75f107f371842fb)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- template d'issues - ([893690f](https://github.com/incaya/projet-inkaya/commit/893690feaecbebd12ee38ddbed12e34ec9d7f6e7)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- Ajout de ressources d'assistance - ([27d8366](https://github.com/incaya/projet-inkaya/commit/27d83663fc7ca3c0a2e06942e804a1e441baaacc)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- ajout de la politique de sécurité - ([a3ed298](https://github.com/incaya/projet-inkaya/commit/a3ed29875313420d3130a49f59fbe841d6cac6e5)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- guide de conduite et de contribution - ([1ae954e](https://github.com/incaya/projet-inkaya/commit/1ae954e509d849c8ee831cd191e279953779b8f2)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- ajout du fichier de citation - ([e6d5a3d](https://github.com/incaya/projet-inkaya/commit/e6d5a3dea9e17744f836d5e28012acbdc3f3fb2c)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- Readme - ([d00f35b](https://github.com/incaya/projet-inkaya/commit/d00f35bb028110ea0a245ac82db387609e4bda59)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- ajout du .gitignore - ([4719bfe](https://github.com/incaya/projet-inkaya/commit/4719bfe200e25f5ea3f5b07bdf2913e2a855eaf0)) - [@alexisjanvier](https://github.com/alexisjanvier)
-- ajout d'une license GNU GPLv3 - ([5d25ba8](https://github.com/incaya/projet-inkaya/commit/5d25ba8b616e955ebef7e3c7f2282064e7693e42)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- publication de la documentation sur Gh pages - ([482c5d8](https://github.com/incaya/projet-incaya/commit/482c5d821bac278ef0f38bddf7df749062f4f7de)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- mise en place du site de documentation WIP - ([c3c1e65](https://github.com/incaya/projet-incaya/commit/c3c1e65e7258a4db26b66a9cce0cbd40f8d8bb8d)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- refacto mineur - ([1175395](https://github.com/incaya/projet-incaya/commit/11753954683b72ee8cc97b4f942ce83c9c0327d9)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- ajout du makefile - ([641120b](https://github.com/incaya/projet-incaya/commit/641120b535554d0dba2c3f8b20356c158f8fd37c)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- PR template - ([c2cc309](https://github.com/incaya/projet-incaya/commit/c2cc3097d22ffdd8f1e4735eb75f107f371842fb)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- template d'issues - ([893690f](https://github.com/incaya/projet-incaya/commit/893690feaecbebd12ee38ddbed12e34ec9d7f6e7)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- Ajout de ressources d'assistance - ([27d8366](https://github.com/incaya/projet-incaya/commit/27d83663fc7ca3c0a2e06942e804a1e441baaacc)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- ajout de la politique de sécurité - ([a3ed298](https://github.com/incaya/projet-incaya/commit/a3ed29875313420d3130a49f59fbe841d6cac6e5)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- guide de conduite et de contribution - ([1ae954e](https://github.com/incaya/projet-incaya/commit/1ae954e509d849c8ee831cd191e279953779b8f2)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- ajout du fichier de citation - ([e6d5a3d](https://github.com/incaya/projet-incaya/commit/e6d5a3dea9e17744f836d5e28012acbdc3f3fb2c)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- Readme - ([d00f35b](https://github.com/incaya/projet-incaya/commit/d00f35bb028110ea0a245ac82db387609e4bda59)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- ajout du .gitignore - ([4719bfe](https://github.com/incaya/projet-incaya/commit/4719bfe200e25f5ea3f5b07bdf2913e2a855eaf0)) - [@alexisjanvier](https://github.com/alexisjanvier)
+- ajout d'une license GNU GPLv3 - ([5d25ba8](https://github.com/incaya/projet-incaya/commit/5d25ba8b616e955ebef7e3c7f2282064e7693e42)) - [@alexisjanvier](https://github.com/alexisjanvier)
 
 - - -
 

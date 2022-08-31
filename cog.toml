@@ -24,7 +24,7 @@ authors = [
 owner = "incaya"
 path = "CHANGELOG.md"
 remote = "github.com"
-repository = "projet-inkaya"
+repository = "projet-incaya"
 template = "remote"
 
 [bump_profiles]

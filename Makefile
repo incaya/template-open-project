@@ -1,7 +1,7 @@
 export CURRENT_UID = $(shell id -u):$(shell id -g)
 BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 
-DC_DEV := docker-compose -p projet-inkaya
+DC_DEV := docker-compose -p projet-incaya
 
 help: ## Affichage des commandes disponibles
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

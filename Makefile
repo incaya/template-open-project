@@ -48,4 +48,10 @@ doc-new-doc: ## Créer un nouveau document
 		./new-docs.sh \
 	'
 
+doc-generate: ## Génération des fichier statique de documentation
+	@${DC_DEV} run --rm --no-deps documentation bash -ci '\
+		cd /documentation && \
+		hugo \
+	'
+
 .PHONY: install start stop logs test

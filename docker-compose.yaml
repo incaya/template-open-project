@@ -11,6 +11,7 @@ services:
       - ./docs:/documentation/content/contribuer
       - ./logo.png:/documentation/static/images/logo.png
       - ./hugo-config.toml:/documentation/config.toml
+      - ./published-documentation:/documentation/public
     ports:
       - 3001:3000
       - 1313:1313

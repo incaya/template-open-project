@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Contribuer - Projet X - Documentation</title>
+  <title>Guide de contribution - Projet X - Documentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="icon" href="https://incaya.github.io/template-open-project/favicon.png">
@@ -147,7 +147,7 @@
   <ul>
     
     <li class="active ">
-      <a href="https://incaya.github.io/template-open-project/contribuer/contribuer/">Contribuer</a>
+      <a href="https://incaya.github.io/template-open-project/contribuer/guide-de-contribution/">Guide de contribution</a>
     </li>
     
     <li class="">
@@ -173,32 +173,71 @@
         </div>
         <div class="col-12 col-md-9">
           
-<h1 class="title">Contribuer</h1>
+<h1 class="title">Guide de contribution</h1>
 <div class="content anchor-link-enabled">
   <h2 id="code-de-conduite">Code de conduite</h2>
-<p>En participant, vous devez respecter le <a href="CODE_OF_CONDUCT.md">code de conduite du projet</a>.</p>
+<p>En participant, vous devez respecter le <a href="./CODE_OF_CONDUCT.md">code de conduite du projet</a>.</p>
 <h2 id="quest-ce-que-je-peux-faire">Qu’est ce que je peux faire</h2>
 <p>Beaucoup de choses, l’écriture de code n’étant pas l’unique manière de contribuer au projet !</p>
-<h3 id="rapporter-des-bugs-bug">Rapporter des bugs :bug:</h3>
+<h3 id="rapporter-des-bugs">Rapporter des bugs</h3>
 <p>Il parait que chaque bug relevé sauve un chaton. En tout cas, la technique du <a href="https://medium.com/quality-functions/the-zero-bug-policy-b0bd987be684">ZBSD (Zero-Bug Software Development)</a> semble porter ses fruits, comme le rapporte <a href="https://medium.com/@andrew.fulton/how-we-got-to-zero-bugs-and-implemented-a-zero-bug-policy-c77ee3f2e50b">Andrew Fulton</a>.
-Donc, si à chaque bug rencontré quelqu’un <a href="#ouvrir-une-issue">ouvre une issue</a> avec le label <strong>Bug</strong> :bug:, ce seront des familles entières de chats qui seront sauvées.</p>
-<h3 id="suggérer-des-améliorations-ou-de-nouvelles-fonctionnalités-heart">Suggérer des améliorations ou de nouvelles fonctionnalités :heart:</h3>
-<p>Dans ce cas, ouvrez une nouvelle issue de type <strong>Amélioration</strong> :heart: en décrivant bien votre idée.</p>
-<h3 id="signaler-des-manques-dans-la-documentation-blue_book">Signaler des manques dans la documentation :blue_book:</h3>
-<p>Si pendant votre participation au projet (que ce soit en l&rsquo;utilisant ou en participant au code) vous n&rsquo;avez pas réussit à faire quelque chose par manque de solution, signalez le en ouvrant une issue de type <strong>Documentation</strong> :blue_book: .</p>
+Donc, si à chaque bug rencontré quelqu’un <a href="#ouvrir-une-issue">ouvre une issue</a> avec le label <strong>Rapport de bug</strong>, ce seront des familles entières de chats qui seront sauvées.</p>
+<h3 id="suggérer-des-améliorations-ou-de-nouvelles-fonctionnalités">Suggérer des améliorations ou de nouvelles fonctionnalités</h3>
+<p>Dans ce cas, ouvrez une nouvelle issue de type <strong>Demande d&rsquo;amélioration</strong> en décrivant bien votre idée.</p>
+<h3 id="signaler-des-manques-dans-la-documentation">Signaler des manques dans la documentation</h3>
+<p>Si pendant votre participation au projet (que ce soit en l&rsquo;utilisant ou en participant au code) vous n&rsquo;avez pas réussit à faire quelque chose par manque de solution, signalez le en ouvrant une issue de type <strong>Demande de documentation</strong>.</p>
 <p>Et d&rsquo;ailleurs n&rsquo;hésitez pas à traiter cette issue en proposant un PR améliorant la documentation si vous avez trouvez une solution !</p>
-<h3 id="contribuer-au-code-seedling">Contribuer au code :seedling:</h3>
+<h3 id="contribuer-au-code">Contribuer au code</h3>
+<p>Pour ce projet, il n&rsquo;y a pas grand-chose à faire sur du code proprement dit &hellip; Par contre, toutes contributions aux contenus éditoriaux sont les bienvenues !</p>
 <!-- raw HTML omitted -->
 <h2 id="lenvironnement-de-développement">L&rsquo;environnement de développement</h2>
 <p>Quelle que soit votre type d’implication, ce peut-être une bonne chose que d’installer le projet sur votre machine pour pouvoir visualiser votre contribution avant de la proposer sur Github.</p>
 <h3 id="prérequis">Prérequis</h3>
 <!-- raw HTML omitted -->
+<ul>
+<li><a href="https://www.docker.com/">Docker</a></li>
+<li><a href="https://docs.docker.com/compose/install/">Docker Compose</a></li>
+<li><a href="https://www.python.org/downloads/">Python</a> en v3 (pour le hook git)</li>
+</ul>
+<p>En option pour gérer les releases, vous aurez besoin de :</p>
+<ul>
+<li><a href="https://docs.cocogitto.io/">cocogitto</a></li>
+</ul>
 <h3 id="lorganisation-du-code">L’organisation du code</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── cog.toml
+</span></span><span class="line"><span class="cl">├── commit-msg
+</span></span><span class="line"><span class="cl">├── docker-compose.yaml
+</span></span><span class="line"><span class="cl">├── docs
+</span></span><span class="line"><span class="cl">│   └── ...
+</span></span><span class="line"><span class="cl">├── hugo-config.toml
+</span></span><span class="line"><span class="cl">├── LICENSE.md
+</span></span><span class="line"><span class="cl">├── logo.png
+</span></span><span class="line"><span class="cl">├── Makefile
+</span></span><span class="line"><span class="cl">├── project-documentation
+</span></span><span class="line"><span class="cl">│   └── ...
+</span></span><span class="line"><span class="cl">├── published-documentation
+</span></span><span class="line"><span class="cl">│   └── ...
+</span></span><span class="line"><span class="cl">└── README.md
+</span></span></code></pre></div><p>On trouve des fichiers de documentation (<code>README.md</code>, <code>LICENSE.md</code>, &hellip;) et de configuration (<code>cog.toml</code>, <code>hugo-config.toml</code>, &hellip;) à la racine du projet, mais aussi 3 répertoires :</p>
+<ul>
+<li><strong>/docs</strong> : c&rsquo;est le répertoire où l&rsquo;on trouve les documents permettant au projet de répondre aux normes communautaires des projets libres et open-source <a href="https://opensource.guide/">recommandées par Github</a>. C&rsquo;est la norme Github qui explique que c&rsquo;est documents ne sont pas présent au sein du répertoire <code>/project-documentation</code>.</li>
+<li><strong>/project-documentation</strong> : c&rsquo;est le répertoire où l&rsquo;on trouve les fichiers de documentations générés et gérés par Hugo.</li>
+<li><strong>/published-documentation</strong> : c&rsquo;est le répertoire où sont générés les fichiers statiques finaux de Hugo, avant publication sur la Github page. Ce répertoire est présent dans le code, mais son contenu est exclu de Git.</li>
+</ul>
 <!-- raw HTML omitted -->
 <h3 id="installer-le-projet">Installer le projet</h3>
 <!-- raw HTML omitted -->
-<h3 id="démarrer-le-projet">Démarrer le projet</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make install
+</span></span></code></pre></div><h3 id="démarrer-le-projet">Démarrer le projet</h3>
 <!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make start
+</span></span></code></pre></div><p>Le projet est alors disponible:</p>
+<ul>
+<li><a href="http://localhost:xxxx">http://localhost:xxxx</a> (en fonction du projet)</li>
+<li>la documentation du projet sur http://localhost:1313/nom-du-repo-github</li>
+<li>Excalidraw (pour faire les schémas de documentation) sur http://localhost:3001</li>
+</ul>
 <h2 id="la-convention-de-codage-coding-style">La convention de codage (coding style)</h2>
 <!-- raw HTML omitted -->
 <h3 id="utilisation-des-commits-conventionnels">Utilisation des commits conventionnels</h3>
@@ -215,7 +254,7 @@ Donc, si à chaque bug rencontré quelqu’un <a href="#ouvrir-une-issue">ouvre 
 <hr>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;type: description courte mais significative&#34;</span>
 </span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;type(scope): description courte mais significative&#34;</span>
-</span></span></code></pre></div><h4 id="le-type">Le type</h4>
+</span></span></code></pre></div><p><strong>Le type</strong></p>
 <p>Dans la convention, c&rsquo;est le <code>type</code> qui est primordial. A certains types sont associés des changements de version de release :</p>
 <table>
 <thead>
@@ -263,21 +302,27 @@ Donc, si à chaque bug rencontré quelqu’un <a href="#ouvrir-une-issue">ouvre 
 <li><strong>style</strong> : Change to style</li>
 <li><strong>test</strong> : Change that adds/modifies tests</li>
 </ul>
-<h4 id="le-scope">Le scope</h4>
+<p><strong>Le scope</strong></p>
 <p>Le <code>scope</code> est optionnel, mais pourra par exemple par faire référence à une carte de backlog (Github, Trello, Taiga, &hellip;).</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;docs(TG-6): add documention about conventional commits&#34;</span>
-</span></span></code></pre></div><h4 id="le-hook-git">Le hook git</h4>
+</span></span></code></pre></div><p><strong>Le hook git</strong></p>
 <p>Vous l&rsquo;aurez compris, on compte sur les développeurs pour s&rsquo;approprier cette convention de commit. Mais c&rsquo;est contraignant, surtout au début. Souvent, on oublie de le faire, ou si on n’oublie pas, on oublie les types disponibles &hellip;</p>
 <p>Un hook git (le fichier <code>commit-msg</code>) est normalement automatiquement installer sur votre environnement lors de votre premier <code>make install</code>. Si cela n&rsquo;est pas le cas, vous pouvez l&rsquo;ajouter vous-même.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp commit-msg .git/hooks/
 </span></span><span class="line"><span class="cl">git init
-</span></span></code></pre></div><p>Mais vous pouvez aussi décider de le désactivé. Mais quoi qu&rsquo;il en soit, nous avons mis en place un <a href=".github/workflows/conventional-commit.yml">workflow Github</a> testant la validité des commits directement sur Github.</p>
+</span></span></code></pre></div><p>Vous pouvez aussi décider de le désactiver. Mais quoi qu&rsquo;il en soit, nous avons mis en place une <a href="%5B.github/workflows/conventional-commit.yml%5D(https://github.com/incaya/template-open-project/actions/workflows/conventional-commit.yml)">Github action</a> testant la validité des commits directement sur Github.</p>
 <h2 id="la-documentation">La documentation</h2>
 <p>Ce n&rsquo;est pas toujours ce qu&rsquo;il y a de plus facile à faire sur un projet : écrire une documentation permettant d&rsquo;utiliser le produit, mais aussi permettant de participer à son élaboration. Et tout aussi difficile, maintenir cette documentation à jours.</p>
 <p>Pourtant, et ceci d&rsquo;expérience, ce sont le plus souvent les projets les mieux documentés qui gagnent l&rsquo;adhésion de la communauté ! Voici donc les quelques méthodes et règle qui nous avons mis en place chez Incaya.</p>
-<h3 id="les-adrs">Les ADR.s</h3>
-<p>Nous utilisons les <a href="https://adr.github.io/">ADR.s (Architectural Decision Records)</a> pour documenter les prises de décisions liées à l&rsquo;architecture du projet.</p>
-<h2 id="les-tests">Les tests</h2>
+<h3 id="hugo">Hugo</h3>
+<p>Nous utilisons un conteneur Docker contenant <a href="https://gohugo.io/">Hugo</a> et <a href="https://excalidraw.com/">Excalidraw</a> pour maintenir au plus près du code une documentation donnant du contexte, des guides ou toute autres information que l&rsquo;on ne peut déduire du code.</p>
+<p>Cette documentation est consultable sur l&rsquo;environnement de développement (), mais elle est aussi automatiquement publiée lorsqu&rsquo;elle est modifiée sur une Github Page : <a href="https://incaya.github.io/template-open-project/">https://incaya.github.io/template-open-project/</a></p>
+<p>Vous pouvez créer un nouveau fichier de documentatinon (il sera généré dans le répertoire <code>project-documentation/documentation</code>) avec la commande :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make doc-new-doc
+</span></span></code></pre></div><h3 id="les-adrs">Les ADR.s</h3>
+<p>Nous utilisons les <a href="https://adr.github.io/">ADR.s (Architectural Decision Records)</a> pour documenter les prises de décisions liées à l&rsquo;architecture du projet. Les ADRs sont en fait gérés par Hugo, et vous pouvez créer un nouvel ADR grâce à la commande :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make doc-new-adr
+</span></span></code></pre></div><h2 id="les-tests">Les tests</h2>
 <p>Afin de faciliter l’intégration (le merge) de vos PR, surtout si elles ajoutent ou modifient du code, celles-ci devront contenir les tests couvrant vos propositions.</p>
 <!-- raw HTML omitted -->
 <p>Les tests sont lancés sur la plateforme d’intégration continue de Github via les <a href="https://github.com/features/actions">Github actions</a>.</p>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Changelogs on Projet X - Documentation</title>
+    <link>https://incaya.github.io/template-open-project/changelog/</link>
+    <description>Recent content in Changelogs on Projet X - Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language><atom:link href="https://incaya.github.io/template-open-project/changelog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://incaya.github.io/template-open-project/changelog/current/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://incaya.github.io/template-open-project/changelog/current/</guid>
+      <description>Changelog All notable changes to this project will be documented in this file. See conventional commits for commit guidelines.
+0.1.0 - 2022-08-31 Features gestion des releases - (408476c) - @alexisjanvier mise en place du conventional commit - (7c4065b) - @alexisjanvier Miscellaneous Chores publication de la documentation sur Gh pages - (482c5d8) - @alexisjanvier mise en place du site de documentation WIP - (c3c1e65) - @alexisjanvier refacto mineur - (1175395) - @alexisjanvier ajout du makefile - (641120b) - @alexisjanvier PR template - (c2cc309) - @alexisjanvier template d&amp;rsquo;issues - (893690f) - @alexisjanvier Ajout de ressources d&amp;rsquo;assistance - (27d8366) - @alexisjanvier ajout de la politique de sécurité - (a3ed298) - @alexisjanvier guide de conduite et de contribution - (1ae954e) - @alexisjanvier ajout du fichier de citation - (e6d5a3d) - @alexisjanvier Readme - (d00f35b) - @alexisjanvier ajout du .</description>
+    </item>
+    
+  </channel>
+</rss>

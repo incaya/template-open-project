@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/contribuer/contribuer/</loc>
+    <loc>https://incaya.github.io/template-open-project/contribuer/contribuer/</loc>
     <lastmod>2022-03-15T10:43:23+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contribuer/</loc>
+    <loc>https://incaya.github.io/template-open-project/contribuer/</loc>
     <lastmod>2018-11-28T15:14:39+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/documentation/</loc>
+    <loc>https://incaya.github.io/template-open-project/documentation/</loc>
     <lastmod>2018-11-28T15:14:39+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contribuer/code-de-conduite/</loc>
+    <loc>https://incaya.github.io/template-open-project/contribuer/code-de-conduite/</loc>
     <lastmod>2022-03-15T10:43:23+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contribuer/trouver-de-l-aide/</loc>
+    <loc>https://incaya.github.io/template-open-project/contribuer/trouver-de-l-aide/</loc>
     <lastmod>2022-03-15T10:43:23+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contribuer/politique-de-securit%C3%A9/</loc>
+    <loc>https://incaya.github.io/template-open-project/contribuer/politique-de-securit%C3%A9/</loc>
     <lastmod>2022-03-15T10:43:23+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contribuer/architecture/</loc>
+    <loc>https://incaya.github.io/template-open-project/contribuer/architecture/</loc>
     <lastmod>2022-03-15T10:43:23+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://incaya.github.io/template-open-project/</loc>
     <lastmod>2022-02-07T15:14:39+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/recherche/</loc>
+    <loc>https://incaya.github.io/template-open-project/recherche/</loc>
     <lastmod>2020-01-02T12:42:17-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/adrs/</loc>
+    <loc>https://incaya.github.io/template-open-project/adrs/</loc>
     <lastmod>2018-11-28T15:14:39+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://incaya.github.io/template-open-project/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://incaya.github.io/template-open-project/tags/</loc>
   </url>
 </urlset>

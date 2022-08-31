@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contribuer on Projet X - Documentation</title>
-    <link>http://localhost:1313/contribuer/</link>
+    <link>https://incaya.github.io/template-open-project/contribuer/</link>
     <description>Recent content in Contribuer on Projet X - Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="http://localhost:1313/contribuer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate><atom:link href="https://incaya.github.io/template-open-project/contribuer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contribuer</title>
-      <link>http://localhost:1313/contribuer/contribuer/</link>
+      <link>https://incaya.github.io/template-open-project/contribuer/contribuer/</link>
       <pubDate>Tue, 15 Mar 2022 10:43:23 +0000</pubDate>
       
-      <guid>http://localhost:1313/contribuer/contribuer/</guid>
+      <guid>https://incaya.github.io/template-open-project/contribuer/contribuer/</guid>
       <description>Comment contribuer au projet</description>
     </item>
     
     <item>
       <title>Code de conduite</title>
-      <link>http://localhost:1313/contribuer/code-de-conduite/</link>
+      <link>https://incaya.github.io/template-open-project/contribuer/code-de-conduite/</link>
       <pubDate>Tue, 15 Mar 2022 10:43:23 +0000</pubDate>
       
-      <guid>http://localhost:1313/contribuer/code-de-conduite/</guid>
+      <guid>https://incaya.github.io/template-open-project/contribuer/code-de-conduite/</guid>
       <description>Les régles de conduite pour participer au projet</description>
     </item>
     
     <item>
       <title>Trouver de l&#39;aide</title>
-      <link>http://localhost:1313/contribuer/trouver-de-l-aide/</link>
+      <link>https://incaya.github.io/template-open-project/contribuer/trouver-de-l-aide/</link>
       <pubDate>Tue, 15 Mar 2022 10:43:23 +0000</pubDate>
       
-      <guid>http://localhost:1313/contribuer/trouver-de-l-aide/</guid>
+      <guid>https://incaya.github.io/template-open-project/contribuer/trouver-de-l-aide/</guid>
       <description>Comment et ou trouver de l&amp;rsquo;aide pour le projet</description>
     </item>
     
     <item>
       <title>Politique de sécurité</title>
-      <link>http://localhost:1313/contribuer/politique-de-securit%C3%A9/</link>
+      <link>https://incaya.github.io/template-open-project/contribuer/politique-de-securit%C3%A9/</link>
       <pubDate>Tue, 15 Mar 2022 10:43:23 +0000</pubDate>
       
-      <guid>http://localhost:1313/contribuer/politique-de-securit%C3%A9/</guid>
+      <guid>https://incaya.github.io/template-open-project/contribuer/politique-de-securit%C3%A9/</guid>
       <description>La politiques et les procédures de sécurité</description>
     </item>
     
     <item>
       <title>Architecture</title>
-      <link>http://localhost:1313/contribuer/architecture/</link>
+      <link>https://incaya.github.io/template-open-project/contribuer/architecture/</link>
       <pubDate>Tue, 15 Mar 2022 10:43:23 +0000</pubDate>
       
-      <guid>http://localhost:1313/contribuer/architecture/</guid>
+      <guid>https://incaya.github.io/template-open-project/contribuer/architecture/</guid>
       <description>Architecture globale du projet</description>
     </item>
     

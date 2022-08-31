@@ -7,8 +7,6 @@ weight: 1
 summary: 'Comment contribuer au projet'
 ---
 
-# Contribuer au projet
-
 ## Code de conduite
 
 En participant, vous devez respecter le [code de conduite du projet](CODE_OF_CONDUCT.md).

@@ -50,12 +50,12 @@ summaryLength = 50
     weight = 6
 
 [params]
-  homepage_button_link = '/documentation'
+  homepage_button_link = '/template-open-project/documentation'
   homepage_button_text = 'Lire la documentation'
   homepage_intro = 'Une introduction à mettre dans le contenu du fichier _index.md à la racine du répertoire de la documentation.'
   enable_anchor_link = true
   mainSections = ['contribuer', 'documentation', 'adrs', 'changelog', 'recherche']
 
   [params.logo]
-      mobile = "/images/logo.png"
-      standard  = "/images/logo.png"
+      mobile = "/template-open-project/images/logo.png"
+      standard  = "/template-open-project/images/logo.png"

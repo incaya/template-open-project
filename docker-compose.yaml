@@ -7,6 +7,7 @@ services:
       - ./project-documentation/adrs:/documentation/content/adrs
       - ./project-documentation/recherche:/documentation/content/recherche
       - ./project-documentation/documentation:/documentation/content/documentation
+      - ./project-documentation/changelog:/documentation/content/changelog
       - ./project-documentation/_index.md:/documentation/content/_index.md
       - ./docs:/documentation/content/contribuer
       - ./logo.png:/documentation/static/images/logo.png

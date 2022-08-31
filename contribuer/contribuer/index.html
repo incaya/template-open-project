@@ -202,6 +202,77 @@ Donc, si à chaque bug rencontré quelqu’un <a href="#ouvrir-une-issue">ouvre 
 <!-- raw HTML omitted -->
 <h2 id="la-convention-de-codage-coding-style">La convention de codage (coding style)</h2>
 <!-- raw HTML omitted -->
+<h3 id="utilisation-des-commits-conventionnels">Utilisation des commits conventionnels</h3>
+<p>Par choix, le processus de déploiement sur les environnenments d&rsquo;exploitation est assez manuel et repose sur des tags associés aux images Docker. Pour pouvoir suivre ce qui est déployé, nous nous basons sur les numéros de release (suivant la convention de <a href="https://semver.org/lang/fr/">gestion sémantique de version</a>).</p>
+<p>Et c&rsquo;est là que l&rsquo;utilisation des <a href="https://www.conventionalcommits.org/fr/v1.0.0/">commits conventionnels</a> : ils permettent d&rsquo;automatiser en parti la gestion des numéros de releases et la gestion du changelog.</p>
+<p>Pour suivre la convention, le message du commit doit être structuré comme suit:</p>
+<hr>
+<pre><code>&lt;type&gt;(optional scope): &lt;description&gt;
+
+[optional body]
+
+[optional footer(s)]
+</code></pre>
+<hr>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;type: description courte mais significative&#34;</span>
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;type(scope): description courte mais significative&#34;</span>
+</span></span></code></pre></div><h4 id="le-type">Le type</h4>
+<p>Dans la convention, c&rsquo;est le <code>type</code> qui est primordial. A certains types sont associés des changements de version de release :</p>
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>description</th>
+<th>versioning sémantique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>fix</strong></td>
+<td>un commit de type fix corrige un bogue dans le code</td>
+<td><strong>PATCH</strong></td>
+</tr>
+<tr>
+<td><strong>feat</strong></td>
+<td>un commit de type feat introduit une nouvelle fonctionnalité dans le code</td>
+<td><strong>MINOR</strong></td>
+</tr>
+<tr>
+<td><strong>BREAKING CHANGE</strong></td>
+<td>un commit qui a <strong>dans le pied de page</strong> le mot clef <code>BREAKING CHANGE:</code>, ou <strong>ajoute un ! après le type/scope</strong>, introduit un changement cassant l’API. Un BREAKING CHANGE peut faire partie des commits de n’importe quel type.</td>
+<td><strong>MAJOR</strong></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Un exemple de commit conventionnel introduisant un BREAKING CHANGE :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;feat!: nouveau plan de routing&#34;</span>
+</span></span></code></pre></div><p>Mais il existe d&rsquo;autres <code>type</code> qui n&rsquo;auront eux pas d&rsquo;impacte sur le numéro de release. Voici la liste compléte des types (sans le BREAKING CHANGE qui peut donc être associé à n&rsquo;importe quel type) :</p>
+<ul>
+<li><strong>build</strong> : Change to build system</li>
+<li><strong>chore</strong> : General tooling/config/min refactor</li>
+<li><strong>ci</strong> : Change to CI pipeline/workflow</li>
+<li><strong>docs</strong> : Change to documentation only</li>
+<li><strong>feat</strong> : A new feature <em>(semver MINOR)</em></li>
+<li><strong>fix</strong> : A bug fix <em>(semver PATCH)</em></li>
+<li><strong>perf</strong> : Change that affects performance</li>
+<li><strong>refactor</strong> : Change not related to a bug or feat</li>
+<li><strong>style</strong> : Change to style</li>
+<li><strong>test</strong> : Change that adds/modifies tests</li>
+</ul>
+<h4 id="le-scope">Le scope</h4>
+<p>Le <code>scope</code> est optionnel, mais pourra par exemple par faire référence à une carte de backlog (Github, Trello, Taiga, &hellip;).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;docs(TG-6): add documention about conventional commits&#34;</span>
+</span></span></code></pre></div><h4 id="le-hook-git">Le hook git</h4>
+<p>Vous l&rsquo;aurez compris, on compte sur les développeurs pour s&rsquo;approprier cette convention de commit. Mais c&rsquo;est contraignant, surtout au début. Souvent, on oublie de le faire, ou si on n’oublie pas, on oublie les types disponibles &hellip;</p>
+<p>Un hook git (le fichier <code>commit-msg</code>) est normalement automatiquement installer sur votre environnement lors de votre premier <code>make install</code>. Si cela n&rsquo;est pas le cas, vous pouvez l&rsquo;ajouter vous-même.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp commit-msg .git/hooks/
+</span></span><span class="line"><span class="cl">git init
+</span></span></code></pre></div><p>Mais vous pouvez aussi décider de le désactivé. Mais quoi qu&rsquo;il en soit, nous avons mis en place un <a href=".github/workflows/conventional-commit.yml">workflow Github</a> testant la validité des commits directement sur Github.</p>
 <h2 id="la-documentation">La documentation</h2>
 <p>Ce n&rsquo;est pas toujours ce qu&rsquo;il y a de plus facile à faire sur un projet : écrire une documentation permettant d&rsquo;utiliser le produit, mais aussi permettant de participer à son élaboration. Et tout aussi difficile, maintenir cette documentation à jours.</p>
 <p>Pourtant, et ceci d&rsquo;expérience, ce sont le plus souvent les projets les mieux documentés qui gagnent l&rsquo;adhésion de la communauté ! Voici donc les quelques méthodes et règle qui nous avons mis en place chez Incaya.</p>

@@ -55,4 +55,15 @@ doc-generate: ## Génération des fichier statique de documentation
 		hugo \
 	'
 
+#-------------
+# Release
+#-------------
+
+release: ## Creation d'une nouvelle release
+ifeq ($(BRANCH),main)
+	cog bump --auto
+else
+	@echo "Il faut être sur la branche main pour générer une nouvelle release."
+endif
+
 .PHONY: install start stop logs test

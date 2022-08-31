@@ -1,8 +1,8 @@
 post_bump_hooks = [
   """
-    sh -c 'cp CHANGELOG.md ./documentation/changelog/current.md'
+    sh -c 'cp CHANGELOG.md ./project-documentation/changelog/current.md'
   """,
-  "git add ./documentation/changelog/current.md",
+  "git add ./project-documentation/changelog/current.md",
   "cog commit chore bump release",
   """
     sh -c "git push origin {{version}}"

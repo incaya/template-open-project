@@ -1,6 +1,6 @@
-name: "💡 Demande d'amélioration"
+name: "Demande d'amélioration"
 description: Créer un ticket pour suggérer une idée d'amélioration du projet
-title: "💡 <title>"
+title: "<title>"
 labels: [
   "question"
 ]

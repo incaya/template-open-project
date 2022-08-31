@@ -1,8 +1,8 @@
-name: "Rapport de bug"
-description: Créer un rapport de bug pour nous aider régler un problème.
+name: "Rapport de sécurité"
+description: Créer un rapport de sécurité.
 title: "<title>"
 labels: [
-  "bug"
+  "security"
 ]
 body:
   - type: textarea

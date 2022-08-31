@@ -10,7 +10,7 @@
 Ce dépôt sert de [template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/) pour les projets publiques [d'Incaya](https://incaya.fr). Ce dépôt inclut : 
 - les fichiers de documentation de base d'un projet open-source (Readme, licence, code de conduite, guide de contribution ...),
 - des templates de Pull requests et d'Issues Github,
-- des [outils](https://github.com/incaya/incaya-documentation) pour maintenir une documentation ([Hugo](https://gohugo.io/) et [Excalidraw](https://excalidraw.com/)),
+- des [outils](https://github.com/incaya/incaya-documentation) pour maintenir une documentation ([Hugo](https://gohugo.io/) et [Excalidraw](https://excalidraw.com/)), sous la forme d'un site web statique publié sur [Github pages](https://pages.github.com/),
 - des outils permettant de mettre en place la spécification [Conventional Commits](https://www.conventionalcommits.org/fr/v1.0.0/) et de s'en servir pour maintenir un fichier de [CHANGELOG](https://fr.wikipedia.org/wiki/Changelog)
 - un [Makefile](https://fr.wikipedia.org/wiki/Make) de base permettant de lancer les commandes courantes du projet (initialisation, démarrage, tests, déploiements ...)
 
@@ -67,7 +67,7 @@ Vous souhaitez participer ? Merci à vous :+1:
 Et c’est très simple :
 
 - Si vous ne savez pas par où commencer, vous pouvez jeter un coup d’œil aux [**issues**](https://github.com/incaya/template-open-project/issues).
-- Une fois que vous savez quoi faire, vous pouvez consulter le [**guide du contributeur**](.docs/CONTRIBUTING.md) pour vous lancer.
+- Une fois que vous savez quoi faire, vous pouvez consulter le [**guide du contributeur**](./docs/CONTRIBUTING.md) pour vous lancer.
 
 Et si vous ne trouvez toujours pas quoi faire dans les issues existantes et/ou que vous avez d’autres idées, n’hésitez pas à créer une nouvelle issue.
 

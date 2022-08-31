@@ -1,37 +1,38 @@
 ---
-title: Contribuer
-slug: contribuer
+title: Guide de contribution
+slug: guide-de-contribution
 date: 2022-03-15T10:43:23Z
 draft: false
 weight: 1
-summary: 'Comment contribuer au projet'
+summary: 'Toutes les informations à connaitre pour pouvoir contribuer au projet.'
 ---
 
 ## Code de conduite
 
-En participant, vous devez respecter le [code de conduite du projet](CODE_OF_CONDUCT.md).
+En participant, vous devez respecter le [code de conduite du projet](./CODE_OF_CONDUCT.md).
 
 ## Qu’est ce que je peux faire
 
 Beaucoup de choses, l’écriture de code n’étant pas l’unique manière de contribuer au projet !
 
-### Rapporter des bugs :bug: 
+### Rapporter des bugs 
 
 Il parait que chaque bug relevé sauve un chaton. En tout cas, la technique du [ZBSD (Zero-Bug Software Development)](https://medium.com/quality-functions/the-zero-bug-policy-b0bd987be684) semble porter ses fruits, comme le rapporte [Andrew Fulton](https://medium.com/@andrew.fulton/how-we-got-to-zero-bugs-and-implemented-a-zero-bug-policy-c77ee3f2e50b).
-Donc, si à chaque bug rencontré quelqu’un [ouvre une issue](#ouvrir-une-issue) avec le label **Bug** :bug:, ce seront des familles entières de chats qui seront sauvées.
+Donc, si à chaque bug rencontré quelqu’un [ouvre une issue](#ouvrir-une-issue) avec le label **Rapport de bug**, ce seront des familles entières de chats qui seront sauvées.
 
-### Suggérer des améliorations ou de nouvelles fonctionnalités :heart:
+### Suggérer des améliorations ou de nouvelles fonctionnalités
 
-Dans ce cas, ouvrez une nouvelle issue de type **Amélioration** :heart: en décrivant bien votre idée.
+Dans ce cas, ouvrez une nouvelle issue de type **Demande d'amélioration** en décrivant bien votre idée.
 
-### Signaler des manques dans la documentation :blue_book:
+### Signaler des manques dans la documentation
 
-Si pendant votre participation au projet (que ce soit en l'utilisant ou en participant au code) vous n'avez pas réussit à faire quelque chose par manque de solution, signalez le en ouvrant une issue de type **Documentation** :blue_book: .
+Si pendant votre participation au projet (que ce soit en l'utilisant ou en participant au code) vous n'avez pas réussit à faire quelque chose par manque de solution, signalez le en ouvrant une issue de type **Demande de documentation**.
 
 Et d'ailleurs n'hésitez pas à traiter cette issue en proposant un PR améliorant la documentation si vous avez trouvez une solution !
 
-### Contribuer au code :seedling:
+### Contribuer au code
 
+Pour ce projet, il n'y a pas grand-chose à faire sur du code proprement dit ... Par contre, toutes contributions aux contenus éditoriaux sont les bienvenues ! 
 <!-- Topo sur le projet -->
 
 ## L'environnement de développement
@@ -41,18 +42,58 @@ Quelle que soit votre type d’implication, ce peut-être une bonne chose que d�
 ### Prérequis
 
 <!-- Décrire ce qui doit-être disponible sur un environnement de développement afin de pouvoir installer le projet et le lancer en local -->
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+- [Python](https://www.python.org/downloads/) en v3 (pour le hook git)
+
+En option pour gérer les releases, vous aurez besoin de :
+- [cocogitto](https://docs.cocogitto.io/)
 
 ### L’organisation du code
 
+```bash
+.
+├── cog.toml
+├── commit-msg
+├── docker-compose.yaml
+├── docs
+│   └── ...
+├── hugo-config.toml
+├── LICENSE.md
+├── logo.png
+├── Makefile
+├── project-documentation
+│   └── ...
+├── published-documentation
+│   └── ...
+└── README.md
+```
+
+On trouve des fichiers de documentation (`README.md`, `LICENSE.md`, ...) et de configuration (`cog.toml`, `hugo-config.toml`, ...) à la racine du projet, mais aussi 3 répertoires :
+
+- **/docs** : c'est le répertoire où l'on trouve les documents permettant au projet de répondre aux normes communautaires des projets libres et open-source [recommandées par Github](https://opensource.guide/). C'est la norme Github qui explique que c'est documents ne sont pas présent au sein du répertoire `/project-documentation`.
+- **/project-documentation** : c'est le répertoire où l'on trouve les fichiers de documentations générés et gérés par Hugo.
+- **/published-documentation** : c'est le répertoire où sont générés les fichiers statiques finaux de Hugo, avant publication sur la Github page. Ce répertoire est présent dans le code, mais son contenu est exclu de Git.
 <!-- Description de l'organisation du code si cela vous semble utile. C'est souvent un plus dans la cas de monorepo ... -->
 
 ### Installer le projet
 
 <!-- Les étapes nécessaires à l'installation du projet -->
+```bash
+make install
+```
 
 ### Démarrer le projet
 
 <!-- Comment lancer le projet en locale -->
+```bash
+make start
+```
+
+Le projet est alors disponible:
+- <http://localhost:xxxx> (en fonction du projet)
+- la documentation du projet sur http://localhost:1313/nom-du-repo-github
+- Excalidraw (pour faire les schémas de documentation) sur http://localhost:3001
 
 ## La convention de codage (coding style)
 
@@ -81,7 +122,7 @@ git commit -m "type: description courte mais significative"
 git commit -m "type(scope): description courte mais significative"
 ```
 
-#### Le type
+**Le type**
 
 Dans la convention, c'est le `type` qui est primordial. A certains types sont associés des changements de version de release :
 
@@ -111,7 +152,7 @@ Mais il existe d'autres `type` qui n'auront eux pas d'impacte sur le numéro de 
 -   **style** : Change to style
 -   **test** : Change that adds/modifies tests
 
-#### Le scope
+**Le scope**
 
 Le `scope` est optionnel, mais pourra par exemple par faire référence à une carte de backlog (Github, Trello, Taiga, ...).
 
@@ -119,7 +160,7 @@ Le `scope` est optionnel, mais pourra par exemple par faire référence à une c
 git commit -m "docs(TG-6): add documention about conventional commits"
 ```
 
-#### Le hook git
+**Le hook git**
 
 Vous l'aurez compris, on compte sur les développeurs pour s'approprier cette convention de commit. Mais c'est contraignant, surtout au début. Souvent, on oublie de le faire, ou si on n’oublie pas, on oublie les types disponibles ...
 
@@ -130,7 +171,7 @@ cp commit-msg .git/hooks/
 git init
 ```
 
-Mais vous pouvez aussi décider de le désactivé. Mais quoi qu'il en soit, nous avons mis en place un [workflow Github](.github/workflows/conventional-commit.yml) testant la validité des commits directement sur Github.
+Vous pouvez aussi décider de le désactiver. Mais quoi qu'il en soit, nous avons mis en place une [Github action]([.github/workflows/conventional-commit.yml](https://github.com/incaya/template-open-project/actions/workflows/conventional-commit.yml)) testant la validité des commits directement sur Github.
 
 ## La documentation
 
@@ -138,9 +179,25 @@ Ce n'est pas toujours ce qu'il y a de plus facile à faire sur un projet : écri
 
 Pourtant, et ceci d'expérience, ce sont le plus souvent les projets les mieux documentés qui gagnent l'adhésion de la communauté ! Voici donc les quelques méthodes et règle qui nous avons mis en place chez Incaya.
 
+### Hugo
+
+Nous utilisons un conteneur Docker contenant [Hugo](https://gohugo.io/) et [Excalidraw](https://excalidraw.com/) pour maintenir au plus près du code une documentation donnant du contexte, des guides ou toute autres information que l'on ne peut déduire du code.
+
+Cette documentation est consultable sur l'environnement de développement (), mais elle est aussi automatiquement publiée lorsqu'elle est modifiée sur une Github Page : https://incaya.github.io/template-open-project/
+
+Vous pouvez créer un nouveau fichier de documentatinon (il sera généré dans le répertoire `project-documentation/documentation`) avec la commande :
+
+```bash
+make doc-new-doc
+```
+
 ### Les ADR.s
 
-Nous utilisons les [ADR.s (Architectural Decision Records)](https://adr.github.io/) pour documenter les prises de décisions liées à l'architecture du projet.
+Nous utilisons les [ADR.s (Architectural Decision Records)](https://adr.github.io/) pour documenter les prises de décisions liées à l'architecture du projet. Les ADRs sont en fait gérés par Hugo, et vous pouvez créer un nouvel ADR grâce à la commande :
+
+```bash
+make doc-new-adr
+```
 
 ## Les tests
 

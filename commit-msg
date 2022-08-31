@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# Original source: https://github.com/prahladyeri/enforce-git-message/
+# Extended with BREAKING CHANGE, exclamation mark support (!) and space before " : " for French people
+
+import re, sys, os
+
+examples = """The header must looks like -> type(scope): brief description
+The type could be :
+  * feat             A new feature - SemVar PATCH
+  * fix              A bug fix - SemVar MINOR
+  * BREAKING CHANGE  Breaking API change or database migration - SemVar MAJOR
+  * docs             Change to documentation only
+  * style            Change to style (whitespace, etc.)
+  * refactor         Change not related to a bug or feat
+  * perf             Change that affects performance
+  * test             Change that adds/modifies tests
+  * build            Change to build system
+  * ci               Change to CI pipeline/workflow
+  * chore            General tooling/config/min refactor
+The scope is optional but can be used to refer to a backlog card
+For example: style(TG-14): brief description
+"""
+
+def main():
+    pattern = r'(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test|BREAKING CHANGE)(\([\w\-\s]+\))?!?\s?:\s.*'
+    filename = sys.argv[1]
+    ss = open(filename, 'r').read()
+    m = re.match(pattern, ss)
+    if m == None:
+        print("\nCOMMIT FAILED!")
+        print("\nPlease enter commit message in the conventional format and try to commit again")
+        print("\n" + examples)
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()

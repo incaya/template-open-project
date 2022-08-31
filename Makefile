@@ -11,6 +11,7 @@ help: ## Affichage des commandes disponibles
 #-------------------
 
 install: ## Installation des dépendance du projet
+	@cp -n commit-msg .git/hooks
 	@echo "Lancement de l'installation du projet"
 
 start: ## Démarrer le projet

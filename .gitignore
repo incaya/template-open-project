@@ -1,6 +1,10 @@
+# Template Incaya
 /published-documentation
 
-# Created by https://www.toptal.com/developers/gitignore/api/vim,visualstudiocode,osx,node,nextjs,yarn,elixir
+#######################################################################################
+# La suite de fichier a été généré avec https://www.toptal.com/developers/gitignore
+# https://www.toptal.com/developers/gitignore/api/vim,visualstudiocode,osx,node,nextjs,yarn,elixir
+#######################################################################################
 
 ### Elixir ###
 /_build
@@ -272,4 +276,6 @@ tags
 # and uncomment the following lines
 # .pnp.*
 
+#######################################################################################
 # End of https://www.toptal.com/developers/gitignore/api/vim,visualstudiocode,osx,node,nextjs,yarn,elixir
+#######################################################################################

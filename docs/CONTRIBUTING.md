@@ -60,6 +60,80 @@ Quelle que soit votre type d’implication, ce peut-être une bonne chose que d�
 
 <!-- Décrire les conventions de code du projet, et les outils de linting éventuels -->
 
+### Utilisation des commits conventionnels
+
+Par choix, le processus de déploiement sur les environnenments d'exploitation est assez manuel et repose sur des tags associés aux images Docker. Pour pouvoir suivre ce qui est déployé, nous nous basons sur les numéros de release (suivant la convention de [gestion sémantique de version](https://semver.org/lang/fr/)).
+
+Et c'est là que l'utilisation des [commits conventionnels](https://www.conventionalcommits.org/fr/v1.0.0/) : ils permettent d'automatiser en parti la gestion des numéros de releases et la gestion du changelog.
+
+Pour suivre la convention, le message du commit doit être structuré comme suit:
+
+---
+
+    <type>(optional scope): <description>
+
+    [optional body]
+
+    [optional footer(s)]
+
+---
+
+```bash
+git commit -m "type: description courte mais significative"
+git commit -m "type(scope): description courte mais significative"
+```
+
+#### Le type
+
+Dans la convention, c'est le `type` qui est primordial. A certains types sont associés des changements de version de release :
+
+| type                | description                                                                                                                                                                                                                      | versioning sémantique |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| **fix**             | un commit de type fix corrige un bogue dans le code                                                                                                                                                                              | **PATCH**             |
+| **feat**            | un commit de type feat introduit une nouvelle fonctionnalité dans le code                                                                                                                                                        | **MINOR**             |
+| **BREAKING CHANGE** | un commit qui a **dans le pied de page** le mot clef `BREAKING CHANGE:`, ou **ajoute un ! après le type/scope**, introduit un changement cassant l’API. Un BREAKING CHANGE peut faire partie des commits de n’importe quel type. | **MAJOR**             |
+|                     |
+
+Un exemple de commit conventionnel introduisant un BREAKING CHANGE :
+
+```bash
+git commit -m "feat!: nouveau plan de routing"
+```
+
+Mais il existe d'autres `type` qui n'auront eux pas d'impacte sur le numéro de release. Voici la liste compléte des types (sans le BREAKING CHANGE qui peut donc être associé à n'importe quel type) :
+
+-   **build** : Change to build system
+-   **chore** : General tooling/config/min refactor
+-   **ci** : Change to CI pipeline/workflow
+-   **docs** : Change to documentation only
+-   **feat** : A new feature _(semver MINOR)_
+-   **fix** : A bug fix _(semver PATCH)_
+-   **perf** : Change that affects performance
+-   **refactor** : Change not related to a bug or feat
+-   **style** : Change to style
+-   **test** : Change that adds/modifies tests
+
+#### Le scope
+
+Le `scope` est optionnel, mais pourra par exemple par faire référence à une carte de backlog (Github, Trello, Taiga, ...).
+
+```bash
+git commit -m "docs(TG-6): add documention about conventional commits"
+```
+
+#### Le hook git
+
+Vous l'aurez compris, on compte sur les développeurs pour s'approprier cette convention de commit. Mais c'est contraignant, surtout au début. Souvent, on oublie de le faire, ou si on n’oublie pas, on oublie les types disponibles ...
+
+Un hook git (le fichier `commit-msg`) est normalement automatiquement installer sur votre environnement lors de votre premier `make install`. Si cela n'est pas le cas, vous pouvez l'ajouter vous-même.
+
+```bash
+cp commit-msg .git/hooks/
+git init
+```
+
+Mais vous pouvez aussi décider de le désactivé. Mais quoi qu'il en soit, nous avons mis en place un [workflow Github](.github/workflows/conventional-commit.yml) testant la validité des commits directement sur Github.
+
 ## La documentation
 
 Ce n'est pas toujours ce qu'il y a de plus facile à faire sur un projet : écrire une documentation permettant d'utiliser le produit, mais aussi permettant de participer à son élaboration. Et tout aussi difficile, maintenir cette documentation à jours.

@@ -24,6 +24,7 @@ Quelles sont les briques logiciels obligatoirement présentes sur l'environnemen
 
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
+- Python (pour le hook git)
 
 ## Démarrage rapide
 

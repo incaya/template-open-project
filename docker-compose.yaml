@@ -4,15 +4,16 @@ services:
   documentation:
     image: ghcr.io/incaya/incaya-documentation:latest
     volumes:
-      - ./project-documentation/adrs:/documentation/content/adrs
-      - ./project-documentation/recherche:/documentation/content/recherche
-      - ./project-documentation/documentation:/documentation/content/documentation
-      - ./project-documentation/changelog:/documentation/content/changelog
+      - ./project-documentation/adrs:/documentation/content/adrs:rw
+      - ./project-documentation/recherche:/documentation/content/recherche:rw
+      - ./project-documentation/documentation:/documentation/content/documentation:rw
+      - ./project-documentation/changelog:/documentation/content/changelog:rw
       - ./project-documentation/_index.md:/documentation/content/_index.md
-      - ./docs:/documentation/content/contribuer
+      - ./docs:/documentation/content/contribuer:rw
       - ./logo.png:/documentation/static/images/logo.png
       - ./hugo-config.toml:/documentation/config.toml
       - ./published-documentation:/documentation/public
+    user: '${CURRENT_UID}'
     ports:
       - 3001:3000
       - 1313:1313

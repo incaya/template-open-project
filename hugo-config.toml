@@ -2,7 +2,6 @@ baseURL = "https://incaya.github.io/template-open-project/"
 languageCode = 'fr'
 defaultContentLanguage = 'fr'
 title = "Projet X - Documentation"
-theme = "hugo-whisper-theme"
 
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
@@ -31,7 +30,7 @@ summaryLength = 50
 
 [[menu.main]]
     name = "Documentation"
-    url = "/documentation/"
+    url = "/docs/"
     weight = 3
 
 [[menu.main]]
@@ -50,12 +49,13 @@ summaryLength = 50
     weight = 6
 
 [params]
-  homepage_button_link = '/template-open-project/documentation'
+  homepage_button_link = 'documentation'
   homepage_button_text = 'Lire la documentation'
-  homepage_intro = 'Une introduction à mettre dans le contenu du fichier _index.md à la racine du répertoire de la documentation.'
   enable_anchor_link = true
-  mainSections = ['contribuer', 'documentation', 'adrs', 'changelog', 'recherche']
+  mainSections = ['contribuer', 'docs', 'adrs', 'changelog', 'recherche']
+  footer_link_url = 'https://incaya.fr/'
+  footer_link_title = 'INCAYA'
 
   [params.logo]
-      mobile = "/template-open-project/images/logo.png"
-      standard  = "/template-open-project/images/logo.png"
+      mobile = "images/logo.png"
+      standard  = "images/logo.png"

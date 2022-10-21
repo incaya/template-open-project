@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://incaya.github.io/template-open-project/docs/gerer-la-documentation/</loc>
+    <lastmod>2022-10-21T14:44:04+00:00</lastmod>
+  </url><url>
     <loc>https://incaya.github.io/template-open-project/contribuer/guide-de-contribution/</loc>
     <lastmod>2022-03-15T10:43:23+00:00</lastmod>
   </url><url>
     <loc>https://incaya.github.io/template-open-project/contribuer/</loc>
     <lastmod>2018-11-28T15:14:39+10:00</lastmod>
   </url><url>
-    <loc>https://incaya.github.io/template-open-project/documentation/</loc>
+    <loc>https://incaya.github.io/template-open-project/docs/</loc>
     <lastmod>2018-11-28T15:14:39+10:00</lastmod>
   </url><url>
     <loc>https://incaya.github.io/template-open-project/contribuer/code-de-conduite/</loc>

@@ -1,0 +1,5 @@
+site_name: Template de projets open-source Incaya
+site_url: https://incaya.github.io/template-open-project/
+nav:
+  - Home: index.md
+  - Changelog: changelog/current.md

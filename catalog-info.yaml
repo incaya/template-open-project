@@ -4,7 +4,8 @@ metadata:
   name: template-open-project
   annotations:
     github.com/project-slug: incaya/template-open-project
+    backstage.io/techdocs-ref: dir:./project-documentation
 spec:
-  type: other
-  lifecycle: unknown
-  owner: guests
+  type: template
+  lifecycle: open-source
+  owner: user:default/alexisjanvier
